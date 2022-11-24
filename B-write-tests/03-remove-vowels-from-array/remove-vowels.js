@@ -21,9 +21,9 @@ function removeVowels(word) {
 module.exports = removeVowels;
 
 /*
-  Let's trace this piece of code - what is the value of result with this input
+  Let's trace this piece of code - what is the value of result with this input: puts word into an array, removes any consonant from array and join array into new word.
 
   let result = removeVowels('samuel');
 
-  what is the value of result?
+  what is the value of result? 'sml'
 */

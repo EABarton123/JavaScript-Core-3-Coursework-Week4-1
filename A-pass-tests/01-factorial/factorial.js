@@ -8,6 +8,13 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {}
+function factorial(int) {
+  const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let sum = 1;
+  for (let i = 0; i < int; i++) {
+    sum *= numberArray[i];
+  }
+  console.log(sum);
+}
 
 module.exports = factorial;

@@ -14,7 +14,7 @@ function factorial(int) {
   for (let i = 0; i < int; i++) {
     sum *= numberArray[i];
   }
-  console.log(sum);
+  return sum;
 }
 
 module.exports = factorial;

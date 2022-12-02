@@ -3,8 +3,12 @@
 // be sure to exclude the strings
 
 function average(numbers) {
-  numbers = numbers.filter((number) => typeof number === "number");
-  console.log(numbers);
+  filteredNumbers = numbers.filter((number) => typeof number === "number");
+  let total = 0;
+  const averageNumber = filteredNumbers.forEach((number) => {
+    total += number;
+  });
+  return total / filteredNumbers.length;
 }
 
 module.exports = average;

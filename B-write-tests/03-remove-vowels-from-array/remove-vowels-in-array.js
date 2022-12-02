@@ -1,10 +1,10 @@
 let removeVowels = require("./remove-vowels");
 
 function removeVowelsFromWords(words) {
-  let result = words.map(function (word) {
-    return removeVowels(word);
+  const result = words.map((word) => {
+    const noVowels = word.replace(/[aeiou]/gi, "");
+    return noVowels;
   });
-
   return result;
 }
 

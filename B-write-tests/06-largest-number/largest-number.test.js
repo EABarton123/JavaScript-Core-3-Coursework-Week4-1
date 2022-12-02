@@ -12,10 +12,9 @@ test("returns largest number in array", function () {
 test("array remains unchanged", function () {
   let input = [3, 21, 88, 4, 36];
   let expected = [3, 21, 88, 4, 36];
+  getLargestNumber(input);
 
-  let output = getLargestNumber(input);
-
-  expect(output).toEqual(expected);
+  expect(input).toEqual(expected);
 });
 
 // example
